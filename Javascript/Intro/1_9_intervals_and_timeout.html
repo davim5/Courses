@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+
+
+    <script>
+      
+      function showSomething() {
+        console.log('Hello World!');
+      };
+
+      //Every secong (1000ms), execute the function 'showSomething'
+      //PS: It's without the '()' because it's only a reference.
+      setInterval(showSomething,1000);
+      
+      //Kinda a delay: it waits the time to execute the function.
+      setTimeout(showSomething,5000);
+    </script>
+  </body>
+</html>
