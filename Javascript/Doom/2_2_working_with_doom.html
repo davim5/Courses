@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+     <!-- Doom é a arvore de elementos dentro do HTML -->
+     <!-- Todos os elementos mostrados em tela -->
+
+     <div id="app">
+       <input type="text" name="nome">
+       <button class="botao">Press Me</button>
+     </div>
+    <script>
+
+      // Através do javascript, é possível manipular os elemtentos
+      // do DOOM
+      // document.querySelect --> Vai pelo "endereço"
+      // document.getElementById --> Busca pelo ID
+      // document.getElementsByName --> busca pelo "name"
+      // document.getElementsByClassName --> busca pela "class"
+
+      // pela propriedade
+      var inputElement = document.querySelector('input[name=nome]')
+      // pela class
+      var btnElement = document.querySelector('button.botao')
+
+      // Deu um atributo ao botão pelo js
+      btnElement.onclick = function(){
+        var text = inputElement.value;
+        alert(text);
+      }
+     
+    
+    </script>
+  </body>
+</html>

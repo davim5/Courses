@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+     <!-- Doom é a arvore de elementos dentro do HTML -->
+     <!-- Todos os elementos mostrados em tela -->
+
+     <div id="app">
+       <input id="nome">
+       
+     </div>
+    <script>https://github.com/davim5
+      // Criando elementos a partir do Javascript
+      var linkElement = document.createElement('a'); //Tag do elemento
+      linkElement.setAttribute('href',"https://github.com/davim5");
+
+      // Criando elemento de texto
+      var textElement = document.createTextNode('Acesse o site');
+      // Adicionando no outro elemento
+      linkElement.appendChild(textElement);
+
+      // O que foi feito:
+      // <a href="https://github.com/davim5">Acesse o site</a>      
+
+      var contentElement = document.querySelector('#app');
+      contentElement.appendChild(linkElement);
+
+      // É possível, também, remover elementos.
+      var inputElement = document.querySelector('#nome');
+      contentElement.removeChild(inputElement);
+    </script>
+  </body>
+</html>
